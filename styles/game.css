@@ -1,0 +1,144 @@
+table {
+    position: relative;
+    margin: 0 auto;
+    background: url("../graphics/mapa 1.jpg") no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #ccced1;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#game, #game-left-container, #game-right-container {
+    display: none;
+}
+#game-left-container{
+    /*border: 1px solid red;*/
+    margin-right: 0;
+}
+
+#timer-container,
+#scorebutton-container,
+#startbutton {
+    text-align: center;
+}
+#game-instructions ul li .image-instruction {
+    height: 30px;
+}
+/*paddins for game columns: instruction, gameboard, score, tiomeleft*/
+/*.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3,*/
+/*.col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,*/
+/*.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3,*/
+/*.col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,*/
+/*.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,*/
+/*.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,*/
+/*.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3,*/
+/*.col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {*/
+    /*padding-left: 0;*/
+
+
+#startbutton {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: mediumseagreen;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    color: white;
+}
+#timer-container,
+#scorebutton-container {
+    margin-top: 200px;
+    padding: 10px;
+    background-color: #fd5d1d;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+    color: white;
+}
+
+#scorebutton-container {
+    margin-top: 40px;
+}
+
+.cinema, .theatre,.animal,.beach,.beer,.coffee,.event-icon, .food,
+.gallery, .horse,.ice-cream,.shop, .guitar,.piano,.opera,.concert{
+    background-size: contain;
+}
+.cinema {
+    background-image: url(../graphics/icons/cinema.png);
+}
+.theatre {
+    background-image: url(../graphics/icons/theatre.png);
+}
+.animal{
+    background-image: url(../graphics/icons/animal.png);
+}
+.beach {
+    background-image: url(../graphics/icons/beach.png);
+}
+.beer {
+    background-image: url(../graphics/icons/beer.png);
+}
+.coffee {
+    background-image: url(../graphics/icons/coffee.png);
+}
+.event-icon {
+    background-image: url(../graphics/icons/event-icon.png);
+}
+.food {
+    background-image: url(../graphics/icons/food.png);
+}
+.gallery {
+    background-image: url(../graphics/icons/gallery.png);
+}
+.ice-cream {
+    background-image: url(../graphics/icons/ice-cream.png);
+}
+.guitar {
+    background-image: url(../graphics/icons/guitar.png);
+}
+.opera {
+    background-image: url(../graphics/icons/opera.png);
+}
+.concert {
+    background-image: url(../graphics/icons/concert.png);
+}
+.piano {
+    background-image: url(../graphics/icons/piano.png);
+}
+
+.event {
+    /*background-color: green;*/
+}
+.player {
+    background: url(../graphics/icons/samochodzik.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*box-shadow: 0px 0px 0px 40px white;*/
+}
+.game-over {
+    position: absolute;
+    top: 170px;
+    left: 110px;
+    padding: 40px;
+    border: 5px solid #fd5d1d;
+    color: #fd5d1d;
+    background-color: ghostwhite;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: Ubuntu, "DejaVu Sans", Arial, sans-serif;
+}

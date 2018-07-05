@@ -1,0 +1,10 @@
+.transition-scroll {
+  transition: transform 2s ease-in-out;
+}
+
+.flip-front-scroll {
+  transform: rotateY(360deg);
+}
+.flip-back-scroll {
+  transform: rotateY(-180deg);
+}

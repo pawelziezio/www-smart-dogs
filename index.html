@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/photos.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <title>wmiasto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600|Ubuntu" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="icon"
+          type="image/png"
+          href="graphics/logo-favicon.png">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+    <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+</head>
+<body>
+<!--  -------------------------Navbar------------------------- -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+            </button>
+
+      <a class="navbar-left" href="#">
+        <img src="graphics/logo1.png"/>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse"
+         id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="navbar-function">
+          <a href="#two">
+            FUNKCJE</a>
+        </li>
+
+        <li id="navbar-team">
+          <a href="#three">
+            ZESPÓŁ</a>
+        </li>
+
+        <li id="navbar-contact">
+          <a href="#four">
+            KONTAKT</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!------------------- Section 1 - Zajawka ------------------>
+<section id="one" class="picture1">
+    <div class="container push-bg-down">
+        <h1 class="intro">
+            Idziemy w miasto!
+        </h1>
+
+        <p class="intro-male">
+            Wszystkie lokalne wydarzenia w jednym miejscu<br>
+            <span>Premiera już wkrótce</span>
+        </p>
+
+        <div class="button-container">
+            <a class="button" href="#four">
+                Zapisz mnie
+            </a>
+        </div>
+    </div>
+</section>
+<!-- ---------------- Section 2 - Funkcje ---------------------- -->
+<!--Function Slider -->
+<section id="two" class="container">
+    <h1>
+        Tworzymy aplikację, która pomoże Ci odnaleźć
+        najciekawsze wydarzenia.<br>
+        Poznaj  najważniejsze funkcjonalności.
+    </h1>
+  <div class="row">
+    <div class="span12">
+      <div class="bootcon">
+        <div id="myCarousel" class="carousel fdi-Carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner onebyone-carosel function_main">
+              <div class="item active">
+                <div class="col-md-4 function">
+                  <i class="i-first material-icons">
+                    place
+                  </i>
+
+                  <h3>
+                    Wyszukiwarka
+                  </h3>
+
+                  <p>
+                      Precyzyjne wyszukiwanie wydarzeń pozwoli Ci lokalizować
+                      wydarzenia odbywające się w pobliżu Twojego miejsca pobytu.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    email
+                  </i>
+
+                  <h3>
+                    Powiadomienia
+                  </h3>
+
+                  <p>
+                      Przypomnimy Ci o wszystkich terminach lub zmianach
+                      dotyczących tych imprez, które wpisałeś do swojego
+                      terminarza.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    sms
+                  </i>
+
+                  <h3>
+                    Subskrypcje
+                  </h3>
+
+                  <p>
+                      Jeśli interesują Cię wydarzenia z konkretnych
+                      dziedzin, dostarczymy Ci informacje na ich temat.
+                      Użyj opcji subskrypcji.
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-first material-icons">
+                    event_available
+                  </i>
+
+                  <h3>
+                    Terminarz
+                  </h3>
+
+                  <p>
+                      Wybrane zapowiedzi lub wydarzenia dodawaj
+                      do terminarza, by były zawsze pod ręką,
+                      do dyspozycji w dowolnej chwili.
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-second material-icons">
+                    dns
+                  </i>
+
+                  <h3>
+                      Personalizacja danych
+                  </h3>
+
+                  <p>
+                      Możesz przeglądać wszystkie wydarzenia
+                      lub ograniczyć wyświetlanie według kryteriów,
+                      np. dat, rodzaju biletów, rangi.
+
+                  </p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="col-md-4 function">
+                  <i class="i-three material-icons">
+                    style
+                  </i>
+
+                  <h3>
+                    Sortowanie wydarzeń
+                  </h3>
+
+                  <p>
+                      Twoje wyniki wyszukiwanie możesz sortować
+                      według własnego uznania, np. odległości
+                      od miejsca, lub innych filtrów.
+                </div>
+              </div>
+            </div>
+
+            <a data-slide="next" href="#myCarousel" class="carousel-control rig">›</a>
+            <a data-slide="prev" href="#myCarousel" class="carousel-control lef">‹</a>
+
+          </div>
+          <!--/carousel-inner-->
+        </div><!--/myCarousel-->
+      </div>
+    </div>
+  </div>
+</section>
+<!--Function Slider End--  ---- MOB Version -->
+<section id="twoMob" class="container">
+    <h1>
+        Tworzymy aplikację, która pomoże Ci odnaleźć
+        najciekawsze wydarzenia.<br>
+        Poznaj  najważniejsze funkcjonalności.
+    </h1>
+  <div class="row">
+    <div class="function">
+        <i class="i-first material-icons">
+            place
+        </i>
+
+        <h3>
+            Wyszukiwarka
+        </h3>
+
+        <p>
+            Precyzyjne wyszukiwanie wydarzeń pozwoli Ci lokalizować
+            wydarzenia odbywające się w pobliżu Twojego miejsca pobytu.
+        </p>
+    </div>
+    </div>
+    <div class="item">
+        <div class=" function">
+            <i class="i-second material-icons">
+                email
+            </i>
+
+            <h3>
+                Powiadomienia
+            </h3>
+
+            <p>
+                Przypomnimy Ci o wszystkich terminach lub zmianach
+                dotyczących tych imprez, które wpisałeś do swojego
+                terminarza.
+            </p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="function">
+            <i class="i-three material-icons">
+                sms
+            </i>
+
+            <h3>
+                Subskrypcje
+            </h3>
+
+            <p>
+                Jeśli interesują Cię wydarzenia z konkretnych
+                dziedzin, dostarczymy Ci informacje na ich temat.
+                Użyj opcji subskrypcji.
+            </p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="function">
+            <i class="i-first material-icons">
+                event_available
+            </i>
+
+            <h3>
+                Terminarz
+            </h3>
+
+            <p>
+                Wybrane zapowiedzi lub wydarzenia dodawaj
+                do terminarza, by były zawsze pod ręką,
+                do dyspozycji w dowolnej chwili.
+        </div>
+    </div>
+    <div class="item">
+        <div class="function">
+            <i class="i-second material-icons">
+                dns
+            </i>
+
+            <h3>
+                Personalizacja danych
+            </h3>
+
+            <p>
+                Możesz przeglądać wszystkie wydarzenia
+                lub ograniczyć wyświetlanie według kryteriów,
+                np. dat, rodzaju biletów, rangi.
+
+            </p>
+        </div>
+    </div>
+    <div class="item">
+        <div class="function">
+            <i class="i-three material-icons">
+                style
+            </i>
+
+            <h3>
+                Sortowanie wydarzeń
+            </h3>
+
+            <p>
+                Twoje wyniki wyszukiwanie możesz sortować
+                według własnego uznania, np. odległości
+                od miejsca, lub innych filtrów.
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- --------------MOB end-----------   -->
+<section id="function-summary" class="container">
+  <div class="function-summary row">
+    <div class="function-summary-img col-sm-6">
+      <img src="graphics/crowdmini.jpg"
+           alt="Koncert"
+           width="740px" height="332px">
+    </div>
+
+    <div class="function-summary-txt col-sm-6">
+      <h3>
+          Wszystkie wydarzenia w jednym miejscu
+      </h3>
+
+      <p>
+          Nasz zespół dostarczy Ci nie tylko precyzyjnie
+          działającą wyszukiwarkę wydarzeń w formie aplikacji.
+          Dbamy także o bazę eventów, dostarczając takie dane
+          jak kategoria imprezy, organizator, słowa zawarte
+          w opisie imprezy, tagi, lokalizacja lub określona
+          odległość od wybranego punktu. Wszystko po to, aby
+          wydarzenia były wyszukiwane szybko, wygodnie, i abyś
+          Ty w gąszczu wszechobecnych informacji nigdy nie przeoczył
+          tego, co Cię interesuje.  
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ----------------- Section 3 - About us -------------------->
+<section id="three"
+         class="container">
+    <h1 class="col-xs-12">
+        Nasza drużyna
+    </h1>
+
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/pawel1.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook iccon">
+                    </a>
+
+                    <a href="https://github.com/pawelziezio"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github iccon">
+                    </a>
+
+                    <a href="https://pl.linkedin.com/in/pawel-ziezio-485a87a4"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin iccon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Paweł Zięzio
+            </h3>
+
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+            Absolwent Oceanografii i Nawigacji. Klimatolog amator. Fanatyk wszystkich sportów 'wodnych'. Lubi aktywnie
+            spędzać czas w towarzystwie swoich czworonogów. Miłośmik wszelakiej aktywności miejskiej.
+        </p>
+    </div>
+    <div class="person col-md-4 col-sm-6 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/karolina1.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook icon">
+                    </a>
+
+                    <a href="https://github.com/KarolinaHetmanska"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github icon">
+                    </a>
+
+                    <a href="https://pl.linkedin.com/in/karolina-hetmanska-432418134"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Karolina Hetmańska
+            </h3>
+
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+            Studentka anglistyki. W wolnym czasie uwielbia spacery po Gdańsku, dzięki którym odkrywa niesamowitą historię swojego miasta. A gdy nie spaceruje - lubi ugotować cos dobrego lub po prostu usiąść przy dobrej herbacie.
+        </p>
+    </div>
+    <div class="person col-md-4 col-xs-12 text-center">
+        <div class="person-img-container">
+            <div class="front">
+                <img class="img-responsive img-thumbnail img-circle"
+                     src="graphics/kuba1.jpg">
+            </div>
+            <div class="back">
+                <div class="three-icons text-center">
+                    <a href="https://pl-pl.facebook.com/"
+                       target="_blank">
+                        <img src="graphics/icons/facebook.png"
+                             alt="facebook iccon">
+                    </a>
+
+                    <a href="https://github.com/KubaTuscher"
+                       target="_blank">
+                        <img src="graphics/icons/github.png"
+                             alt="github iccon">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/jakub-tuscher-3451882"
+                       target="_blank">
+                        <img src="graphics/icons/linkedin.png"
+                             alt="lincedin iccon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="person-about-container">
+            <h3 class="person-name">
+                Kuba Tuscher
+            </h3>
+
+        </div>
+        <p class="person-bio col-xs-10 col-xs-offset-1">
+          Absolwent Szkoły Głównej Handlowej. Były urzędnik idealista. Lubi dobry design i dobre uczynki. W wolnych chwilach powiększa stan wiedzy bezużytecznej, spełnia się kulinarnie i przygotowuje do ojcostwa.
+        </p>
+    </div>
+</section>
+
+<!---------------------------Section 4 - Form ------------------------->
+<section id="four">
+    <div class="container">
+        <div id="form-field" class="col-xs-12 text-center">
+            <h1> Chcę tę aplikację</h1>
+
+            <form class="four-form" action="">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Wyrażam zgodę na przetwarzanie moich danych przez firmę XYZ.
+
+                        <p>
+                            Wyślemy do Ciebie tylko jeden email z informacją o premierze aplikacj.
+                        </p>
+                    </label>
+                </div>
+
+                <input type="email" name="email" placeholder="Podaj swoj adres e-mail">
+
+                <div class="four-submit">
+                    <input id="game-display" type="submit" value="Zapisz mnie">
+                </div>
+            </form>
+        </div>
+ <!-- ------------------Game---------------------- -->
+
+      <div id="game-left-container" class="col-xs-3">
+        <div id="game-instructions">
+          <!--<h4><b>Zwiedzaj miasto już dziś!</b></h4>-->
+
+          <h4><b>Na czym polega gra?</b></h4>
+
+          <ul>
+            <li><b>cel: odwiedź jak najwięcej miejsc w mieście, </b>
+              <br>możesz na przykład pójść do teatru:
+              <img class="image-instruction"
+                   src="graphics/icons/theatre.png"
+                   alt="theatre-icon">
+              , do zoo:
+              <img class="image-instruction"
+                   src="graphics/icons/animal.png"
+                   alt="animal-icon">
+              , zrelakować się na plaży:
+              <img class="image-instruction" src="graphics/icons/beach.png"
+                   alt="beach-icon">
+              lub pójść na koncert:
+              <img class="image-instruction"
+                     src="graphics/icons/piano.png"
+                   alt="shop-icon">
+            </li>
+
+            <li>po mieście <b>poruszasz się </b>samochodem
+              <img class="image-instruction"
+                   src="graphics/icons/samochodzik.png"
+                   alt="car-icon">
+            </li>
+
+            <li>poruszasz się <b> przy pomocy myszki lub klawiszy strzałek;</b>
+              UWAGA! możesz wykonać ruch w każdym kierunku (myszką równiez po skosie), ale <b>tylko o jedną kratkę</b>
+              dalej
+            </li>
+
+            <li>wszystkie <b> miejsca pojawiają się </b>w losowo wybranych punktach miasta <b>i znikają </b> po kilku
+              sekundach
+            </li>
+
+            <li>za każde <b> miejsce, które odwiedzisz zdobywasz 1 punkt </b>
+            </li>
+
+            <li>gra <b> kończy się po upływie 30 sekund </b>(licznik czasu oraz punktów znajdziesz po prawej stronie
+              gry)
+            </li>
+          </ul>
+        </div>
+        <div id="startbutton">START</div>
+      </div>
+
+      <div id="game" class="col-xs-7">
+      </div>
+
+      <div id="game-right-container" class="col-xs-2">
+        <div id="timer-container">
+          <span>Pozostało czasu:</span><br>
+          <span id="timer">30</span>
+        </div>
+
+        <div id="scorebutton-container">
+          <span>Punkty:</span><br>
+          <span id="scorebutton">0</span>
+        </div>
+      </div>
+    </div>
+
+</section>
+<!-- ------------------Footer---------------------- -->
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-offset-4 col-sm-3 footer-lists">
+        <h3>Funkcje</h3>
+        <ul>
+          <li><a href="#two">Personalizacja danych</a></li>
+          <li><a href="#two">Sortowanie wydarzeń</a></li>
+          <li><a href="#two">Wyszukiwarka</a></li>
+          <li><a href="#two">Powiadomienia</a></li>
+          <li><a href="#two">Subskrypcje</a></li>
+          <li><a href="#two">Terminarz</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 footer-lists">
+        <h3>Wmiasto</h3>
+        <ul>
+          <li><a href="#">
+            <img src="graphics/icons/contact-icon-white.png"
+                 alt="email-icon">
+            Kontakt</a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="graphics/icons/fb-icon-white.png"
+                   alt="fb-icon">
+              facebook</a>
+          </li>
+
+          <li><a href="#three">Nasza drużyna</a></li>
+
+          <li id="dateActualization"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/game.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/photos.js"></script>
+<script src="js/function-slider.js"></script>
+
+</body>
+</html>
